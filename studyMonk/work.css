@@ -1,0 +1,409 @@
+body{
+    flex: auto;
+    box-sizing: border-box;
+}
+*{
+    box-sizing: border-box;
+    
+}
+ul {
+list-style-type: none;
+margin-top: 30px;
+padding-top:10px;
+overflow: hidden;
+}
+
+li {
+float: right;
+text-align: center;
+
+}
+
+li a {
+display: block;
+color: rgb(10, 10, 10);
+text-align: center;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+padding: 14px 15px;
+text-decoration: none;
+}
+
+li a:hover:not(.active, .button) {
+border-bottom: solid 2px black;
+}
+
+
+
+.button{
+padding:13px 20px;
+background-color: rgb(54, 20, 2);
+border-radius: 50px;
+color: white;
+font-size: medium;
+font-weight: bold;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+display: block;
+transition: transform 0.5s ease-in-out;
+}
+.button:hover{
+transform: scale(1.05,1.05);
+}
+li a:active{
+font-weight: bold;
+}
+div:nth-child(2){
+display: block;
+z-index: -1;
+box-sizing: border-box;
+position: relative;
+width: 100%;
+height: 350px;
+
+}
+div:nth-child(2)>div{
+display: block;
+z-index: 1;
+box-sizing: border-box;
+position: absolute;
+width: min(50%,700px);
+left: 200px;
+top: 0px;
+margin: auto;
+height: 350px;
+
+}
+p:nth-child(1){
+display: block;
+position: absolute;
+top: 0;
+left: 0s;
+font-size: 65px;
+font-weight: 900;
+line-height: 70px;
+text-overflow: clip;
+word-wrap: keep-all;
+overflow: hidden;
+}
+p:nth-child(2){
+display: block;
+position: absolute;
+bottom: 10px;
+color: rgb(198, 61, 23);
+text-overflow: clip;
+word-wrap: keep-all;
+left: 0;
+font-size: 65px;
+font-weight: 900;
+line-height: 60px;
+
+overflow: hidden;
+}
+.grid{
+display: block;
+position: relative;
+height: 400px;
+width: 100%;
+flex: auto;
+box-sizing: border-box;
+
+}
+.grid>div{
+display: block;
+position: relative;
+left:0; 
+width: 25%;
+height: 400px;
+box-sizing: border-box;
+
+background-color: rgba(243, 248, 248,0.8);
+overflow: hidden;
+float: left;
+}
+
+.topics{
+position: relative;
+display: block;
+width:100%;
+height: 100px;
+box-sizing: border-box;
+/* border: solid 5px black; */
+
+}
+.row1{
+position: relative;
+display: block;
+width:100%;
+height: 500px;
+box-sizing: border-box;
+background-image: linear-gradient(to right black grey);
+
+
+}
+.row1>div{
+position: relative;
+display: block;
+width:25%;
+float: left;
+height: 500px;
+box-sizing: border-box;
+overflow: hidden;
+transition:  1s ease;
+
+}
+.row1>div:hover .image1{
+transform: scale(1.2,1.2);
+}
+.row2>div:hover .image1{
+transform: scaleY(1.2);
+}
+.row3>div:hover .image1{
+transform: scale(1.2,1.2);
+}
+.row4>div:hover .image1{
+transform: scaleY(1.2);
+}
+.row2{
+position: relative;
+display: block;
+width:100%;
+height: 500px;
+box-sizing: border-box;
+overflow: hidden;
+
+}
+.row2 .row21{
+position: relative;
+display: block;
+width:50%;
+float: left;
+height: 500px;
+box-sizing: border-box;
+
+}
+.row2>div{
+position: relative;
+display: block;
+width:25%;
+float: left;
+height: 500px;
+box-sizing: border-box;
+
+}
+.row3{
+position: relative;
+display: block;
+width:100%;
+height: 500px;
+box-sizing: border-box;
+overflow: hidden;
+
+
+}
+.row3>div{
+position: relative;
+display: block;
+width:50%;
+float: left;
+height: 500px;
+box-sizing: border-box;
+
+
+}
+.row3>div:last-child{
+position: relative;
+display: block;
+width:50%;
+float: left;
+height: 500px;
+box-sizing: border-box;
+background-image: linear-gradient(to right, black,rgb(119, 34, 34),rgb(221, 195, 28));
+text-align: left;
+font-size: 300px;
+color: aliceblue;
+}
+
+.row4{
+position: relative;
+display: block;
+width:100%;
+height: 600px;
+box-sizing: border-box;
+overflow: hidden;
+overflow-x: hidden;
+
+}
+.row4>div{
+position: relative;
+display: block;
+width:25%;
+float: left;
+height: 600px;
+box-sizing: border-box;
+
+}
+.row4 .row41{
+position: relative;
+display: block;
+width:50%;
+float: left;
+height: 600px;
+box-sizing: border-box;
+
+}
+.bottom1,.bottom2,.bottom3{
+position: relative;
+display: block;
+width:100%;
+box-sizing: border-box;
+
+}
+.bottom2>div{
+position: relative;
+display: block;
+width:20%;
+float: left;
+height: 100px;
+box-sizing: border-box;
+border-left: solid 1px black;
+}
+.blackblur{
+position: absolute;
+display: block;
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+opacity: 0;
+height: 100%;
+width: 100%;
+background-color: black;
+transition: 0.5s ease;
+}
+.blackblur:hover {
+opacity: 0.5;
+}
+.imgdiv{
+position: absolute;
+display: block;
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+height: 100%;
+width: 100%;
+opacity: 1;
+object-fit: fill;
+}
+.button3{
+position: absolute;
+display: block;
+height: 30px;
+width: 80px;
+left:10%;
+bottom:5%;
+}
+.button3>div{
+position: relative;
+display: block;
+height: 30px;
+width: 30px;
+margin-left: 5px;
+float: left;
+border-radius: 48%;
+overflow: hidden;
+}
+.text{
+position: absolute;
+width: 100%;
+top: 50px;
+z-index: 1;
+left: 10px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+display: block;
+height: 100px;
+text-align: left;
+font-size: 25px;
+color: aliceblue;
+font-weight: 800;
+}
+.bottom2>div>div:first-child{
+position: relative;
+display: inline-block;
+height: 50px;
+width: 180px;
+font-weight: 900;
+top: 20px;
+color: rgb(6, 6, 6);
+font-size: 25px;
+left: 20px;
+cursor: pointer;
+transition: 1s ease;
+}
+.bottom2>div>div:last-child{
+position: relative;
+display: inline-block;
+height: 30px;
+width: 50px;
+
+top: 20px;
+font-weight: 900;
+color: rgb(126, 15, 15);
+font-size: 25px;
+transition: transform 1s ease;
+}
+.bottom2>div>div:nth-child(2){
+position: absolute;
+display: block;
+height: 50px;
+width: 100%;
+font-weight: 500;
+top: 60px;
+color: rgb(6, 6, 6);
+font-size: 15px;
+left: 20px;
+
+}
+.bottom2>div>div:first-child:hover{
+
+color: brown;
+width: 220px;
+}
+.bottom2>div>div:first-child:hover .bottom2>div>div:last-child{
+transform: translate(10px,0px);
+}
+.last{
+position: relative;
+width: 60%;
+top: 0;
+margin: auto;
+margin-bottom: 50px;
+box-sizing: border-box;
+}
+.last>p{
+position: relative;
+width: 100%;
+
+line-height: 20px;
+font-weight: 100;
+font-size: 15px;
+text-align: center;
+color: black;
+margin: auto;
+}
+.bottom3>div>a{
+color: black;   
+font-size: 30px;
+}
+.bottom3>div{
+position: relative;
+box-sizing: border-box;
+float: left;
+top:20px;
+bottom: 0;
+width: 50px;
+height: 100px;
+overflow: hidden;
+margin-left: 10px;
+}
+
+
